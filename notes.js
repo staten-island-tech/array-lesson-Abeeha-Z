@@ -50,3 +50,21 @@ console.log(newArr);
 for(let i = 0; i < 3); {
     console.log(i)
 } //for loops in js
+
+
+const buttons = docuent.querySelector("button"); //select all buttons
+const newButtons = Array.from(buttons);
+//make array from buttons if i was to use filter
+
+newButtons.forEach((button) = (button.style.backgroundColor = "blue")); //iterate through array and change each buttons color
+
+newButtons.forEach((button) => (button.addEventListener("click"), function(event) {
+    console.log(event.target.textContent);
+})
+);
+
+//make sure you graph html element at the top first
+DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    '<div class="card"><h2 class="card-header">Some Text</h2></div>'
+) //
