@@ -48,14 +48,14 @@ const products = [
 //   console.log(fprice);
 // );
 
-const categories = ["Electronics", "Furniture"];
+// const categories = ["Electronics", "Furniture"];
 
-products.forEach((product) => {
-  if (!categories.includes(product.category)) {
-    categories.push(product.category);
-  }
-});
-console.log("Unique Categories:", categories);
+// products.forEach((product) => {
+//   if (!categories.includes(product.category)) {
+//     categories.push(product.category);
+//   }
+// });
+// console.log("Unique Categories:", categories);
 
 // const electronics = products.filter(
 //   (product) => product.category === "Electronics"
