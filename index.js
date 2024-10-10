@@ -42,36 +42,32 @@ const products = [
 //   console.log(product.name, product.price)
 // );
 
-// const categories = ["Electronics", "Furniture"];
+// const increasePrice = products.forEach((product) =>
+//   newPrice = (1.1 * product.price);
+//   fprice = math.round(newPrice);
+//   console.log(fprice);
+// );
 
-const increasePrice = products.forEach((product) =>
-  newPrice = (1.1 * product.price);
-  fprice = math.round(newPrice);
-  console.log(fprice);
-);
+const categories = ["Electronics", "Furniture"];
 
-// products.forEach((product) => {
-//   if (!categories.includes(product.category)) {
-//     categories.push(product.category);
-//   }
-// });
-// console.log("Unique Categories:", categories);
+products.forEach((product) => {
+  if (!categories.includes(product.category)) {
+    categories.push(product.category);
+  }
+});
+console.log("Unique Categories:", categories);
 
 // const electronics = products.filter(
 //   (product) => product.category === "Electronics"
 // );
 // console.log("Electronics:", electronics);
 
-// const electronics = products.filter(
-//   (product) => product.category === "Electronics"
+// const furniture = products.filter(
+//   (product) => product.category === "Furniture"
 // );
-// console.log("Electronics:", electronics);
+// console.log("Furniture:", furniture);
 
 // //filter highly rated products
 // const highlyRated = products.filter((product) => product.rating >= 4.5);
 // console.log("Highly Rated Products: ", highlyRated);
 
-// //filter + log
-// const highlyRated = (product.rating >= 4.5).forEach((product) =>
-//   console.log(product.name)
-// );
